@@ -5,10 +5,13 @@
   @include grid(1fr 5fr);
 
   background-color: #f3f4f3;
+
   .sidebar {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   }
-  // .main-content {
-  // }
+
+  .main-content {
+    position: relative;
+  }
 }

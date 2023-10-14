@@ -1,0 +1,9 @@
+@import '../../styles/mixin';
+
+.dashboard-container {
+    padding-right: 1rem;
+
+    .card-container {
+        @include grid(1fr 1fr 1fr,)
+    }
+}

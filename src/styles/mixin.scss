@@ -1,0 +1,36 @@
+@mixin heading($size: 1.2rem, $weight: 600, $case: upcase) {
+  font-size: $size;
+  font-weight: $weight;
+  text-transform: $case;
+}
+
+@mixin flex(
+  $direc: col,
+  $justifyContent: center,
+  $alignItem: center,
+  $gap: 1rem
+) {
+  display: flex;
+  flex-direction: $direc;
+  justify-content: $justifyContent;
+  align-items: $alignItem;
+  gap: $gap;
+}
+
+@mixin grid($col: 1fr, $gap: 1rem, $row: unset) {
+  display: grid;
+  grid-template-columns: $col;
+  grid-template-rows: $row;
+  gap: $gap;
+}
+
+@mixin postCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin square($size: 1rem) {
+  width: $size;
+  height: $size;
+}

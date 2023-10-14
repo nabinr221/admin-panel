@@ -1,0 +1,48 @@
+@import '../../styles/mixin';
+
+.navbar-wrapper {
+    width: 100%;
+    padding: .85rem 1rem;
+    background-color: white;
+    @include flex(col, space-between);
+
+    .navbar-left {
+        border: 1px solid gray;
+        padding: 0.65rem 1rem;
+
+        .input-box {
+            @include flex(col, start, center);
+            width: fit-content;
+
+            input {
+                font-size: 1rem;
+                padding: 0;
+                margin: 0;
+                border: none;
+                outline: none;
+
+                .search-icon {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: olivedrab;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .navbar-right {
+        width: auto;
+        @include flex();
+
+        .img-wrapper {
+            width: fit-content;
+            height: fit-content;
+            border-radius: 50%;
+            border: 1px solid;
+            @include flex();
+        }
+    }
+}
